@@ -44,7 +44,9 @@
       font-size: 24px;
       cursor: pointer;
       color: #0061ba;
-    }
+    position: relative;
+  left: 104px;  
+  }
 
     /* Hide the menu by default on mobile */
     nav ul {
@@ -278,6 +280,15 @@
   }
 }
 
+
+
+
+@media (max-width: 768px) {
+  .auction-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
 @media (max-width: 768px) {
   #chat-button {
     position: fixed;
@@ -366,13 +377,6 @@
   }
 }
 
-
-@media (max-width: 768px) {
-  .auction-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-}
 
 
 

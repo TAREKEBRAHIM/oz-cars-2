@@ -16,7 +16,7 @@ ul {
 }
 .container {
   margin: auto;
-  width: 1199px;
+  width: 1170px;
 }
 .nav-cont {
   width: 1185px;
@@ -60,11 +60,11 @@ ul {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 19px;
+  gap:19px;
 }
 
 nav ul li a {
-  color: #0061ba;
+  color: #0061BA;
   text-decoration: none;
   font-size: 16px;
   font-weight: bolder;
@@ -486,7 +486,7 @@ nav ul li a {
 }
 
 .start-text .start-btn button {
-  padding: 13px 13px;
+  padding: 12px 18px;
   font-size: 15px;
   border-radius: 3px;
   color: #707070;
@@ -669,7 +669,8 @@ footer .column img {
   display: flex;
   gap: 36px;
   position: relative;
-  bottom: 70px;
+  bottom: 72px;
+left: 13px;
 }
 
 button {

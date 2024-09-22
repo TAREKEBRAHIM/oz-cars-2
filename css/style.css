@@ -46,12 +46,90 @@ ul {
   padding: 26px 0px;
 }
 
-.menu-toggle {
-  display: none; /* Hide toggle button on desktop */
-  font-size: 24px;
 
+
+
+
+/* Hide nav menu by default */
+#nav-men {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Start offscreen */
+  width: 70%; /* Adjust width as needed */
+  max-width: 300px; /* Set max width if desired */
+  height: 100%;
+  background-color: #fff; /* Adjust background color */
+  box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: box shadow */
+  transition: right 0.3s ease;
+  z-index: 1000; /* Ensure it's above other content */
+display: flex;
+flex-direction: column;
+}
+
+#nav-men.open {
+  right: 0; /* Slide in from right */
+}
+
+#close-nav {
+  position: absolute;
+  top: 34px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
   cursor: pointer;
 }
+
+#nav-men ul {
+  list-style: none;
+  padding: 0;
+}
+
+#nav-men ul li {
+  padding: 15px 20px;
+display: block;
+}
+
+#nav-men ul li a {
+  text-decoration: none;
+  color: #333; /* Adjust link color */
+  font-size: 15px; /* Adjust font size */
+}
+
+/* Toggle button styles */
+#nav-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 32px;
+  right: 10px;
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .logo img {
   width: 100px;
@@ -60,11 +138,11 @@ ul {
 nav ul {
   display: flex;
   list-style: none;
-  gap:19px;
+  gap: 19px;
 }
 
 nav ul li a {
-  color: #0061BA;
+  color: #0061ba;
   text-decoration: none;
   font-size: 16px;
   font-weight: bolder;
@@ -86,8 +164,8 @@ nav ul li a {
 
 .overlay {
   position: absolute;
-  top: 35%;
-  left: 35%;
+  top: 42%;
+  left: 37%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,14 +190,14 @@ nav ul li a {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
-  left: 60%;
-  bottom: 93%;
+  left: 61%;
+  bottom: 94%;
 }
 
 .top-nav {
   background-color: #0061b4; /* Blue background */
   color: white;
-  padding: 12px 60px;
+  padding: 8px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +222,6 @@ nav ul li a {
 }
 
 #select-link {
-  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -242,7 +319,6 @@ nav ul li a {
 .right-section {
   display: flex;
   align-items: center;
-  gap: 14px;
 }
 
 .right-section a {
@@ -390,6 +466,8 @@ nav ul li a {
 .card .icon-img {
   width: 10% !important;
   height: fit-content;
+  position: relative;
+  top: 6px;
 }
 
 .owl-carousel-cars .card .border-cont {
@@ -422,7 +500,7 @@ nav ul li a {
 
 .holder .red-sec {
   background-color: #004b9a;
-  font-size: 13px;
+  font-size: 11px;
   width: 20px;
   height: 15px;
   color: white;
@@ -432,7 +510,7 @@ nav ul li a {
 
 .holder .blue-sec {
   background-color: red;
-  font-size: 13px;
+  font-size: 11px;
   color: white;
   width: 26px;
   height: 15px;
@@ -444,6 +522,7 @@ nav ul li a {
   color: #ed1c24;
   font-size: 18px;
   font-weight: 600;
+  padding-top: 2px;
 }
 .start .start-text .terms {
   color: white;
@@ -542,7 +621,6 @@ nav ul li a {
 .chat-form {
   display: flex;
   flex-direction: column;
-
   padding: 10px;
   border: 1px solid #ccc;
   border-top-left-radius: 15px;
@@ -653,6 +731,7 @@ footer .column img {
 }
 .footer .footer-note {
   color: lightgray;
+  padding-top: 35px;
 }
 
 .footer .regster {
@@ -667,10 +746,10 @@ footer .column img {
 
 .container .form-btns {
   display: flex;
-  gap: 36px;
+  gap: 30px;
   position: relative;
-  bottom: 72px;
-left: 13px;
+  bottom: 113px;
+  left: 13px;
 }
 
 button {
@@ -681,13 +760,29 @@ button {
   font-size: 16px;
 }
 
+/* the main style */
 .btn-red {
   background-color: red;
   color: white;
-  padding: 10px 81px;
+  padding: 1px 84px;
   cursor: pointer;
   border-radius: 4px;
+  position: relative;
 }
+
+/* toggle style */
+
+.btn-white {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  padding: 10px 84px;
+  border-radius: 4px;
+
+
+
+}
+
 
 .btn-blue {
   background-color: blue;
@@ -695,9 +790,11 @@ button {
   padding: 10px 81px;
   cursor: pointer;
   border-radius: 4px;
+  border-radius: 4px;
 }
 
 /* Add the style for when the button is clicked */
+
 .btn-clicked {
   background-color: white;
   color: red;
@@ -778,13 +875,8 @@ input::placeholder {
   background-color: #0056b3;
 }
 
-
-
-
-
 .category-sec {
-display: none;
-
+  display: none;
 }
 
 .auction-grid {
@@ -798,7 +890,7 @@ display: none;
 }
 
 .auction-grid .category p {
-color: #707070;
-font-size: 15px;
-text-transform: capitalize;
+  color: #707070;
+  font-size: 15px;
+  text-transform: capitalize;
 }

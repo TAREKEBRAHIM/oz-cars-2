@@ -13,11 +13,7 @@
 }
 
 @media (min-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-
+  
   .nav-links li {
     margin-bottom: 10px;
   }
@@ -36,21 +32,9 @@
     padding: 10px;
   }
 
-  /* Mobile-specific styles */
-  @media (max-width: 768px) {
-    /* Show the toggle button on mobile */
-    .menu-toggle {
-      display: block;
-      font-size: 24px;
-      cursor: pointer;
-      color: #0061ba;
-    position: relative;
-  left: 104px;  
-  }
 
     /* Hide the menu by default on mobile */
     nav ul {
-      display: none;
       flex-direction: column; /* Stack items vertically */
       gap: 10px; /* Add some space between items */
       background-color: #fff; /* You can change this to fit your design */
@@ -59,13 +43,9 @@
       left: 0;
       width: 100%; /* Full width menu */
       padding: 15px 0;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for dropdown */
+      
     }
 
-    /* When the menu is active, display the links */
-    nav.active ul {
-      display: flex;
-    }
 
     /* Align menu items to the left */
     nav ul li {
@@ -97,16 +77,51 @@
 }
 
 @media (min-width: 768px) {
-  .menu-toggle {
+  .men-toggle {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  nav ul li a {
+  #nav-menu ul li a {
     display: none;
   }
 }
+
+
+
+
+@media (max-width: 768px) {
+  #nav-toggle {
+    display: block;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+    .btn-white {
+      background-color: white;
+  color: red;
+  border: 1px solid red;
+  padding: 5px 19px;
+  border-radius: 4px;
+
+    
+    
+    
+    
+      }
+
+
+  }
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .dropdown-menu {
@@ -166,45 +181,30 @@
   }
 }
 
-
-
-
-
 @media (max-width: 768px) {
-  .top-sec .dropdown-frisline .h-drop  {
+  .top-sec .dropdown-frisline .h-drop {
     color: #707070;
     font-size: 9px;
     text-transform: capitalize;
+  }
 }
-}
-
-
-
-
-
 
 @media (max-width: 768px) {
-  .top-sec .dropdown-frisline .close-dropdown   {
+  .top-sec .dropdown-frisline .close-dropdown {
     color: #707070;
     font-size: 25px;
     text-transform: capitalize;
-padding-top: 0px;
+    padding-top: 0px;
   }
 }
 
-
-
 @media (max-width: 768px) {
-  .dropdown-menu h4    {
+  .dropdown-menu h4 {
     color: #777;
     font-size: 11px;
     text-transform: capitalize;
-
   }
 }
-
-
-
 
 @media (max-width: 768px) {
   .container .head-text .head-text-two p {
@@ -212,17 +212,9 @@ padding-top: 0px;
     font-size: 14px;
     text-transform: capitalize;
     padding: 5px 15px;
-  background-color: #f0f0f0;
-  
-  
+    background-color: #f0f0f0;
   }
-
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
   .right-section a {
@@ -338,14 +330,11 @@ padding-top: 0px;
   }
 }
 
-
-
-
 @media (max-width: 768px) {
   .auction-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-}
+  }
 }
 @media (max-width: 768px) {
   #chat-button {
@@ -434,9 +423,3 @@ padding-top: 0px;
     text-align: center;
   }
 }
-
-
-
-
-
-

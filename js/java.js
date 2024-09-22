@@ -1,9 +1,22 @@
+
+
+// Toggle navigation menu
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  document.getElementById('nav-men').classList.toggle('open');
+});
+
+// Close navigation menu
+document.getElementById('close-nav').addEventListener('click', function() {
+  document.getElementById('nav-men').classList.remove('open');
+});
+
+
+
+
 $(document).ready(function () {
   $(".owl-carousel-cars").owlCarousel({
     loop: true,
     margin: 20,
-    nav: true,
-    dots: true,
     navText: [
     
     ],
@@ -80,6 +93,13 @@ window.onclick = function (event) {
 const searchButton = document.getElementById('search-make-model');
 const formContainer = document.getElementById('form-container');
 
+
+
+
+
+
+
+
 // Add event listener to the button
 searchButton.addEventListener('click', () => {
   // Toggle the form's visibility
@@ -89,9 +109,6 @@ searchButton.addEventListener('click', () => {
     formContainer.style.display = 'none'; // Hide the form
   }
 });
-
-
-
 
 
 
@@ -116,37 +133,24 @@ Button.addEventListener('click', () => {
 
 
 
-  document.getElementById('search-make-model').addEventListener('click', function() {
-    this.classList.add('btn-clicked');  // Add the new styles
+$(document).ready(function() {
+  $('#search-make-model').click(function() {
+    $(this).toggleClass('btn-red btn-white');
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
-
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+  $('#search-category').click(function() {
+    $(this).toggleClass('btn-red btn-white');
   });
+});
+
+
+
+
+
+
+
+
+
+
+
+
